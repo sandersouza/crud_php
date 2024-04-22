@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS crud;
+USE crud;
+
+CREATE TABLE IF NOT EXISTS people (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    phone VARCHAR(20)
+);

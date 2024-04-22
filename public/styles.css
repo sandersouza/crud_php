@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    align-items: center; /* Centraliza horizontalmente na coluna */
+    margin-top: 50px; /* Espaço no topo */
+}
+h1 {
+    margin-bottom: 20px; /* Espaçamento antes da tabela */
+}
+table {
+    width: 80%; /* Define a largura da tabela */
+    border-collapse: separate; /* Necessário para bordas arredondadas */
+    border-spacing: 0;
+    border: 2px solid black;
+    border-radius: 10px; /* Bordas arredondadas */
+}
+th, td {
+    padding: 10px;
+    text-align: left; /* Alinha o texto à esquerda */
+    border-bottom: 1px solid black; /* Linha entre as linhas da tabela */
+}
+th {
+    background-color: #f2f2f2; /* Cor de fundo para cabeçalhos de tabela */
+}
+th:first-child {
+    border-top-left-radius: 10px; /* Arredonda a borda superior esquerda do primeiro cabeçalho */
+}
+th:last-child {
+    border-top-right-radius: 10px; /* Arredonda a borda superior direita do último cabeçalho */
+}
+td:first-child {
+    border-bottom-left-radius: 10px; /* Arredonda a borda inferior esquerda da última linha */
+}
+td:last-child {
+    border-bottom-right-radius: 10px; /* Arredonda a borda inferior direita da última linha */
+}
+td form {
+    display: inline; /* Exibe os formulários lado a lado */
+}
